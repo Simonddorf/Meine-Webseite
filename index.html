@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meine Coaching Webseite</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f5f0;
+            color: #171717;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: #171717;
+            padding: 16px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .nav-container a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .nav-container a:hover {
+            background: #3a3a3a;
+        }
+
+        /* Hauptbereich */
+        .hero {
+            max-width: 1100px;
+            margin: auto;
+            padding: 100px 25px 80px;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 7vw, 72px);
+            line-height: 1.05;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #555555;
+        }
+
+        .hero p {
+            max-width: 650px;
+            font-size: 20px;
+            color: #555555;
+        }
+
+        /* Bereiche */
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 25px;
+        }
+
+        section h2 {
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            max-width: 750px;
+            color: #555555;
+            font-size: 18px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 35px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #dedbd4;
+            border-radius: 18px;
+            padding: 30px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        /* Handy */
+        @media (max-width: 600px) {
+
+            .nav-container {
+                gap: 4px;
+            }
+
+            .nav-container a {
+                padding: 10px 8px;
+                font-size: 13px;
+            }
+
+            .hero {
+                padding: 70px 20px 60px;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+
+            section h2 {
+                font-size: 32px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="nav-container">
+            <a href="#startseite">Startseite</a>
+            <a href="#coaching">Coaching</a>
+            <a href="#training">Trainings</a>
+            <a href="#ueber-mich">Über mich</a>
+        </div>
+    </nav>
+
+
+    <!-- STARTSEITE -->
+    <div class="hero" id="startseite">
+        <h1>
+            Willkommen auf<br>
+            meiner <span>Webseite.</span>
+        </h1>
+
+        <p>
+            Hier kannst du später deinen eigenen Text über dich,
+            deine Arbeit und dein Coaching einfügen.
+        </p>
+    </div>
+
+
+    <!-- COACHING -->
+    <section id="coaching">
+        <h2>Coaching</h2>
+
+        <p>
+            Hier kannst du später erklären, was dein Coaching
+            beinhaltet und wem du damit helfen möchtest.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Coaching 1</h3>
+                <p>
+                    Deinen eigenen Text kannst du hier später einfügen.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Coaching 2</h3>
+                <p>
+                    Deinen eigenen Text kannst du hier später einfügen.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TRAINING -->
+    <section id="training">
+        <h2>Trainings</h2>
+
+        <p>
+            Hier kannst du deine Trainings, Angebote oder
+            Programme vorstellen.
+        </p>
+    </section>
+
+
+    <!-- ÜBER MICH -->
+    <section id="ueber-mich">
+        <h2>Über mich</h2>
+
+        <p>
+            Hier kannst du später etwas über dich,
+            deine Erfahrung und deine Geschichte schreiben.
+        </p>
+    </section>
+
+</body>
+</html>
